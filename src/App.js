@@ -47,10 +47,10 @@ class App extends Component {
         <div className="Hien">
           <h2>Ấn tượng của anh</h2>
           <ul className="antuong">
-            <li>Em Hiền như tên của em vậy</li>
+            <li>Hiền hiền như tên của em vậy</li>
             <li>EM là người khó đoán :)), cảm nhận từ một người đoán người toàn sai như anh</li>
-            <li>Anh nhận thấy em là người "sợ nhìn thẳng vào người khác", nếu sợ nhìn thẳng vào người khác thì sẽ rất dễ sợ xã giao, con người như thế thì sẽ đảm trách được công việc nếu tự lực làm gì đó, khó có thể làm một chức vụ cao hơn như điều hành nhiều người khác. ANh thấy hình bóng của anh trong em, thời anh còn ngu ngơ ngây thơ 2 năm trước đây, anh lảng tránh mọi người và luôn tìm một góc dành cho mình. Điều này hoàn toàn sửa được nhé, sửa được thì cuộc sống của em thay đổi nhiều lắm</li>
-            <li>Em là người dễ dụ. Và cuối cùng em có nét gì giống bạn ngày xưa anh tán, nhưng giờ đây bạn đấy đã có chồng :))</li>
+            <li>Anh nhận thấy em là người "sợ nhìn thẳng vào người khác", nếu sợ nhìn thẳng vào người khác thì sẽ rất dễ sợ xã giao, con người như thế thì sẽ khó  đảm trách được công việc nếu tự lực làm gì đó, khó có thể làm một chức vụ cao hơn như điều hành nhiều người khác. ANh thấy hình bóng của anh trong em, thời anh còn ngu ngơ ngây thơ 2 năm trước đây, anh lảng tránh mọi người và luôn tìm một góc dành cho mình. Điều này hoàn toàn sửa được nhé, sửa được thì cuộc sống của em thay đổi nhiều lắm</li>
+            <li>Hiền là người dễ dụ. Và cuối cùng em có nét gì giống bạn ngày xưa anh tán, nhưng giờ đây bạn đấy đã có chồng :))</li>
           </ul>
           <h2>Lời chúc của anh</h2>
           <ul className="antuong">
