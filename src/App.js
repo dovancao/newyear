@@ -39,7 +39,7 @@ class App extends Component {
               <li>Chúc em năm 2019 này thật nhiều sức khỏe, ra trường sớm, đừng như anh :D</li>
             </ul>
             <h2>HAPPY NEW YEAR</h2>
-            <div>Ấn vào link này nhé https://www.youtube.com/watch?v=YUKJdYZxlYI</div>
+            <div>Ấn vào link này nhé <a href="https://www.youtube.com/watch?v=YUKJdYZxlYI">https://www.youtube.com/watch?v=YUKJdYZxlYI</a></div>
           </div>
       )
     } else if (this.state.name === "Minh Hien Nguyen" && this.state.click === 1) {
@@ -60,7 +60,67 @@ class App extends Component {
             <li>Chúc em ngày mai đi làm nhận được thật nhiều niềm vui</li>
           </ul>
           <h2>HAPPY NEW YEAR</h2>
-          <div>Ấn vào link này nhé https://www.youtube.com/watch?v=YUKJdYZxlYI</div>
+          <div>Ấn vào link này nhé <a href="https://www.youtube.com/watch?v=YUKJdYZxlYI">https://www.youtube.com/watch?v=YUKJdYZxlYI</a></div>
+        </div>
+      )
+    } else if (this.state.name === "Trang Thùy" && this.state.click === 1){
+      mHtml = (
+        <div className="trang">
+          <h2>Ấn tượng của anh</h2>
+          <ul className="antuong">
+            <li>Trang đáng yêu, dễ thương, dễ gần nhưng ko đáng để yêuu :))</li>
+            <li>Trang hay cười và mang lại tiếng cười cho mọi người dù mọi người chả hiểu gì</li>
+            <li>Trang giúp anh biết ôm một người khác giới cảm giác như nào (người yêu cũ của anh anh chưa từng được ôm)</li>
+          </ul>
+          <h2>Lời chúc của anh</h2>
+          <ul className="antuong">
+            <li>Trang forever young</li>
+            <li>Trang cứ mãi mãi phơi phới như vậy để giúp thế giới này tràn ngập tiếng cười</li>
+            <li>Trang sẽ thành công với những dự định năm 2019 này</li>
+            <li>Trang sớm giàu để anh vay tiền(gái tài chính mà)</li>
+            <li>Đợi trang tuần tới đi chụp ảnh</li>
+          </ul>
+          <h2>HAPPY NEW YEAR</h2>
+          <div>Ấn vào link này nhé <a href="https://www.youtube.com/watch?v=YUKJdYZxlYI">https://www.youtube.com/watch?v=YUKJdYZxlYI</a></div>
+        </div>
+      )
+    } else if (this.state.name === "Minh Phương" && this.state.click === 1){
+      mHtml = (
+        <div className="phuong">
+          <h2>Ấn tượng của anh</h2>
+          <ul className="antuong">
+            <li>Phương cute theo đúng nghĩa của từ cute: lùn và đáng yêu - nhưng chưa đáng để yêu :))</li>
+            <li>Phương ngoan và vâng lời</li>
+            <li>Phương rất tốt bụng , toàn cố tình cho mọi người ăn nhiều để mọi người béo</li>
+            <li>Phương vòng 3 siêu to</li>
+          </ul>
+          <h2>Lời chúc của anh</h2>
+          <ul className="antuong">
+            <li>Phương sẽ thành công và đạt được những dự định của em năm 2019 này</li>
+            <li>Phương sẽ mãi mãi tươi tắn và yêu đời như bây giờ</li>
+            <li>Và em sớm có người yêu, đông này lạnh lắm </li>
+          </ul>
+          <h2>HAPPY NEW YEAR</h2>
+          <div>Ấn vào link này nhé <a href="https://www.youtube.com/watch?v=YUKJdYZxlYI">https://www.youtube.com/watch?v=YUKJdYZxlYI</a></div>
+        </div>
+      )
+    } else if (this.state.name === "Hatter Minh" && this.state.click === 1 ) {
+      mHtml = (
+        <div className="phuong">
+          <h2>Ấn tượng của anh</h2>
+          <ul className="antuong">
+            <li>Vẻ ngoài minh có vẻ kiêu kiêu. Nhưng trái lại, Minh là một người rất tỉ mỉ và đáng yêu. Anh rất quý minh</li>
+            <li>Minh ăn mặc rất đẹp.</li>
+            <li>Minh hay làm mọi người vui vẻ</li>
+          </ul>
+          <h2>Lời chúc của anh</h2>
+            <ul className="antuong">
+              <li>Chúc Minh sẽ thành công với dự định sắp tới của em vào năm 2019 này</li>
+              <li>Trong tương lai thật gần (2 năm tới) Minh sẽ trở thành một nhà thiết kế thực thụ. và anh muốn là người đầu tiên mua đồ của emmm</li>
+              <li>Em luôn phơi phới, bận rộn với công việc yêu thích của mình</li>
+            </ul>
+            <h2>HAPPY NEW YEAR</h2>
+          <div>Ấn vào link này nhé <a href="https://www.youtube.com/watch?v=YUKJdYZxlYI">https://www.youtube.com/watch?v=YUKJdYZxlYI</a></div>
         </div>
       )
     }
@@ -70,13 +130,13 @@ class App extends Component {
       <div className="App">
         <div className="container">
           <form className="form" onSubmit={this.onSubmit}>
-            <div class="form-group">
+            <div className="form-group">
               <label for="input">Nhập tên facebook của bạn</label>
               <input type="text" placeholder="Đỗ Sơn" id="input"
                 onChange={this.changeText}
               ></input>
             </div>
-            <button type="submit" class="btn btn-primary">Xem lời chúc</button>
+            <button type="submit" className="btn btn-primary">Xem lời chúc</button>
           </form>
           {mHtml}
         </div>
