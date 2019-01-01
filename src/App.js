@@ -179,6 +179,26 @@ class App extends Component {
           <div>Anh Ấn vào link này nhé <a href="https://www.youtube.com/watch?v=YUKJdYZxlYI">https://www.youtube.com/watch?v=YUKJdYZxlYI</a></div>
         </div>
       )
+    } else if (this.state.name === "Phuong Thu Nguyen" && this.state.click === 1) {
+      mHtml = (
+        <div className="Phuong">
+           <h2>Ấn tượng của Anh</h2>
+            <ul className="antuong">
+              <li>Em cao và mặc đồ đen</li>
+              <li>Xinh xắn, tốt bụng</li>
+              <li>Dễ dụ (bị dụ đi chritmas cùng nhóm quest) :))</li>
+            </ul>
+            <h2>Lời chúc của Anh</h2>
+            <ul className="antuong">
+              <li>Phương sẽ đạt được những dự định của mình trong năm 2019 này.</li>
+              <li>Phương sẽ luôn bận rộn và thành công với công việc làm sự kiện của mình.</li>
+              <li>Phương sẽ có "da thịt" hơn vào năm 2019 tới :))</li>
+              <li>Luôn yêu đời và forever young.</li>
+            </ul>
+            <h2>HAPPY NEW YEAR</h2>
+            <div>Em Ấn vào link này nhé <a href="https://www.youtube.com/watch?v=YUKJdYZxlYI">https://www.youtube.com/watch?v=YUKJdYZxlYI</a></div>
+        </div>
+      )
     }
 
 
