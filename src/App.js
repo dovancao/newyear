@@ -124,6 +124,42 @@ class App extends Component {
           <div>Ấn vào link này nhé <a href="https://www.youtube.com/watch?v=YUKJdYZxlYI">https://www.youtube.com/watch?v=YUKJdYZxlYI</a></div>
         </div>
       )
+    } else if (this.state.name === "Quỳnh Hương" && this.state.click === 1) {
+      mHtml = (
+        <div className="huong">
+          <h2>Ấn tượng của anh</h2>
+          <ul className="antuong">
+            <li>Mắt kính to tròn</li>
+            <li>Cười duyên</li>
+          </ul>
+          <h2>Lời chúc của anh</h2>
+          <ul className="antuong">
+            <li>Chúc em sẽ thành công trong những dự định sắp tới của em vào năm 2019 này</li>
+            <li>Lúc nào cũng gặp may mắn trong cuộc sống cũng như công việc</li>
+          </ul>
+          <h2>HAPPY NEW YEAR</h2>
+          <div>Ấn vào link này nhé <a href="https://www.youtube.com/watch?v=YUKJdYZxlYI">https://www.youtube.com/watch?v=YUKJdYZxlYI</a></div>
+        </div>
+      )
+    } else if (this.state.name === "Trong Manh" && this.state.click === 1) {
+      mHtml = (
+        <div className="Trong Manh">
+          <h2>Ấn tượng của anh</h2>
+          <ul className="antuong">
+            <li>To khỏe, vui tính, hòa đồng. Em luôn là tâm điểm khuấy động đám đông, và tạo tiếng cười cho mọi người</li>
+            <li>Tỉ mỉ và cẩn thận trong công việc. </li>
+            <li>Em là người thông minh, mạnh dạn học hỏi, không sợ người khác chê cười, từ một người mù mờ về tiếng anh mà một năm sau em là con người khác hẳn, anh thực sự cảm thấy ấn tượng với Mạnh</li>
+          </ul>
+          <h2>Lời chúc của anh</h2>
+          <ul className="antuong">
+            <li>Chúc em sớm tìm được đam mê của mình và đạt được dự định của mình trong năm 2019</li>
+            <li>Luôn thành công trong mọi lĩnh vực em tham gia</li>
+            <li>Sớm có bạn gái để anh cảm thấy ghen tị :))</li>
+          </ul>
+          <h2>HAPPY NEW YEAR</h2>
+          <div>Ấn vào link này nhé <a href="https://www.youtube.com/watch?v=YUKJdYZxlYI">https://www.youtube.com/watch?v=YUKJdYZxlYI</a></div>
+        </div>
+      )
     }
 
 
