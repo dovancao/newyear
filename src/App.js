@@ -121,7 +121,9 @@ class App extends Component {
               <input type="text" placeholder="Đỗ Sơn" id="input"
                 onChange={this.changeText}
               ></input>
+              
             </div>
+            <button type="submit" class="btn btn-primary">Chọn người ghép cặp</button>
           </form>
           {mHtml}
         </div>
