@@ -3,203 +3,113 @@ import './App.css';
 
 class App extends Component {
 
-  state = {
-    name : "",
-    click: "" 
-  }
+    state = {
+        name : "",
+        click: "" 
+    }
 
-  onSubmit = (event) => {
-    event.preventDefault();
-    this.setState({
-      click: 1
-    })
-  }
+    onSubmit = (event) => {
+        event.preventDefault();
+        this.setState({
+        click: 1
+        })
+    }
 
-  changeText = (event) => {
-    this.setState({
-      name: event.target.value
-    })
-  }
+    changeText = (event) => {
+        this.setState({
+        name: event.target.value
+        })
+    }
 
-  render() {
-    let mHtml;
-    if(this.state.name === "Đông Vũ" && this.state.click=== 1){
-      mHtml = (
-          <div className="Dong_Vu">
-            <h2>Ấn tượng của anh</h2>
-            <ul className="antuong">
-              <li>Đông rất cao</li>
-              <li>Đông rất tỉ mỉ và chau chuốt trong công việc</li>
-              <li>Đông rất giỏi đánh DJ</li>
-            </ul>
-            <h2>Lời Chúc của anh</h2>
-            <ul className="antuong">
-              <li>Không biết đam mê của em có phải DJ không, nhưng nếu nó là DJ thì, anh hy vọng sẽ được gặp Đông ở một sân khấu thực thụ trong tương lai gần, đừng bỏ lỡ cái em thích và em thực sự bỏ thời gian</li>
-              <li>Hãy yêu một cô gái đi nhé, Phương khá thích em với lại em cũng hợp nó đó, tiến đi :D. It nhất là cuộc sống của em sẽ có thêm chút gia vị, biết đâu từ đó anh sẽ không phải thấy một DJ đông vũ nữa, mà là một producer Đông Vũ</li>
-              <li>Chúc em năm 2019 này thật nhiều sức khỏe, ra trường sớm, đừng như anh :D</li>
-            </ul>
-            <h2>HAPPY NEW YEAR</h2>
-            <div>Ấn vào link này nhé <a href="https://www.youtube.com/watch?v=YUKJdYZxlYI">https://www.youtube.com/watch?v=YUKJdYZxlYI</a></div>
+    render() {
+        let mHtml;
+        if(this.state.name === "Phạm Trung Hiếu" && this.state.click=== 1){
+        mHtml = (
+          <div className="Dong_Vu" style={{width: "100px", height: "100px", margin: "0 auto", textAlign: "center"}}>
+            <h2>Nguyễn Hồng Nga</h2>
+            <img style={{width: "100px", height: "100px"}} src="https://data-main.basecdn.net/201912/sys1/drive/18/19/87/c1/d4/e9/a0/e4d0aa2f8c785e5d7ee7c0e2f0e55bac/c432ac3a2d839cc880bfb99d4012269e_907826_SLH53EXH5MYYR.jpg"></img>
           </div>
       )
-    } else if (this.state.name === "Minh Hien Nguyen" && this.state.click === 1) {
+    } else if (this.state.name === "Nguyễn Hồng Nga" && this.state.click === 1) {
       mHtml = (
-        <div className="Hien">
-          <h2>Ấn tượng của anh</h2>
-          <ul className="antuong">
-            <li>Hiền hiền như tên của em vậy</li>
-            <li>EM là người khó đoán :)), cảm nhận từ một người đoán người toàn sai như anh</li>
-            <li>Anh nhận thấy em là người "sợ nhìn thẳng vào người khác", nếu sợ nhìn thẳng vào người khác thì sẽ rất dễ sợ xã giao, con người như thế thì sẽ khó  đảm trách được công việc nếu tự lực làm gì đó, khó có thể làm một chức vụ cao hơn như điều hành nhiều người khác. ANh thấy hình bóng của anh trong em, thời anh còn ngu ngơ ngây thơ 2 năm trước đây, anh lảng tránh mọi người và luôn tìm một góc dành cho mình. Điều này hoàn toàn sửa được nhé, sửa được thì cuộc sống của em thay đổi nhiều lắm</li>
-            <li>Hiền là người dễ dụ. Và cuối cùng em có nét gì giống bạn ngày xưa anh tán, nhưng giờ đây bạn đấy đã có chồng :))</li>
-            <li>Hiền xinh, kiểu gu của anh :))</li>
-          </ul>
-          <h2>Lời chúc của anh</h2>
-          <ul className="antuong">
-            <li>Chúc em vẫn sẽ mãi bụ bẫm và xinh đẹp</li>
-            <li>Chúc em luôn may mắn trong cuộc sống</li>
-            <li>Chúc em và gia đình luôn mạnh khỏe và đầm ấm</li>
-            <li>Chúc em ngày mai đi làm nhận được thật nhiều niềm vui</li>
-          </ul>
-          <h2>HAPPY NEW YEAR</h2>
-          <div>Ấn vào link này nhé <a href="https://www.youtube.com/watch?v=YUKJdYZxlYI">https://www.youtube.com/watch?v=YUKJdYZxlYI</a></div>
+        <div className="Hien" style={{width: "100px", height: "100px", textAlign: "center",  margin: "0 auto"}}>
+          <h2>Sơn Đỗ</h2>
+          <img style={{width: "100px", height: "100px"}} src=""></img>
         </div>
       )
-    } else if (this.state.name === "Trang Thùy" && this.state.click === 1){
+    } else if (this.state.name === "Đức Nghĩa" && this.state.click === 1){
       mHtml = (
-        <div className="trang">
-          <h2>Ấn tượng của anh</h2>
-          <ul className="antuong">
-            <li>Trang đáng yêu, dễ thương, dễ gần nhưng ko đáng để yêuu :))</li>
-            <li>Trang hay cười và mang lại tiếng cười cho mọi người dù mọi người chả hiểu gì</li>
-            <li>Trang giúp anh biết ôm một người khác giới cảm giác như nào (người yêu cũ của anh anh chưa từng được ôm)</li>
-          </ul>
-          <h2>Lời chúc của anh</h2>
-          <ul className="antuong">
-            <li>Trang forever young</li>
-            <li>Trang cứ mãi mãi phơi phới như vậy để giúp thế giới này tràn ngập tiếng cười</li>
-            <li>Trang sẽ thành công với những dự định năm 2019 này</li>
-            <li>Trang sớm giàu để anh vay tiền(gái tài chính mà)</li>
-            <li>Đợi trang tuần tới đi chụp ảnh</li>
-          </ul>
-          <h2>HAPPY NEW YEAR</h2>
-          <div>Ấn vào link này nhé <a href="https://www.youtube.com/watch?v=YUKJdYZxlYI">https://www.youtube.com/watch?v=YUKJdYZxlYI</a></div>
+        <div className="trang" style={{width: "100px", height: "100px", textAlign: "center",  margin: "0 auto"}}>
+          <h2>Hatter Minh</h2>
+          <img style={{width: "100px", height: "100px"}} src="https://data-main.basecdn.net/201912/sys1/drive/17/15/4c/8e/f9/d3/b2/fd25806d7682f3b3ac5c98bb96ef96ab/c53c7cd5db2c5455c158daa33ad6d1c1_110766_MFEQT7VFQ6AP6.jpg"></img>
         </div>
       )
-    } else if (this.state.name === "Minh Phương" && this.state.click === 1){
+    } else if (this.state.name === "Thùy Trang" && this.state.click === 1){
       mHtml = (
-        <div className="phuong">
-          <h2>Ấn tượng của anh</h2>
-          <ul className="antuong">
-            <li>Phương cute theo đúng nghĩa của từ cute: lùn và đáng yêu - nhưng chưa đáng để yêu :))</li>
-            <li>Phương ngoan và vâng lời</li>
-            <li>Phương rất tốt bụng , toàn cố tình cho mọi người ăn nhiều để mọi người béo</li>
-            <li>Phương vòng 3 siêu to</li>
-          </ul>
-          <h2>Lời chúc của anh</h2>
-          <ul className="antuong">
-            <li>Phương sẽ thành công và đạt được những dự định của em năm 2019 này</li>
-            <li>Phương sẽ mãi mãi tươi tắn và yêu đời như bây giờ</li>
-            <li>Và em sớm có người yêu, đông này lạnh lắm </li>
-          </ul>
-          <h2>HAPPY NEW YEAR</h2>
-          <div>Ấn vào link này nhé <a href="https://www.youtube.com/watch?v=YUKJdYZxlYI">https://www.youtube.com/watch?v=YUKJdYZxlYI</a></div>
+        <div className="phuong" style={{width: "100px", height: "100px", textAlign: "center",  margin: "0 auto"}}>
+          <h2>Doanh Quảng Đặng</h2>
+          <img style={{width: "100px", height: "100px"}} src="https://data-main.basecdn.net/201912/sys1/drive/17/15/cc/1d/3f/f4/68/87e7e263ee48714ac0544fe946b5b1a2/7767c61ba11235be6808c46dcc862527_172557_CZUYTRKQYQ63P.jpg"></img>
         </div>
       )
-    } else if (this.state.name === "Hatter Minh" && this.state.click === 1 ) {
+    } else if (this.state.name === "Trần Minh" && this.state.click === 1 ) {
       mHtml = (
-        <div className="phuong">
-          <h2>Ấn tượng của anh</h2>
-          <ul className="antuong">
-            <li>Vẻ ngoài minh có vẻ kiêu kiêu. Nhưng trái lại, Minh là một người rất tỉ mỉ và đáng yêu. Anh rất quý minh</li>
-            <li>Minh ăn mặc rất đẹp.</li>
-            <li>Minh hay làm mọi người vui vẻ</li>
-          </ul>
-          <h2>Lời chúc của anh</h2>
-            <ul className="antuong">
-              <li>Chúc Minh sẽ thành công với dự định sắp tới của em vào năm 2019 này</li>
-              <li>Trong tương lai thật gần (2 năm tới) Minh sẽ trở thành một nhà thiết kế thực thụ. và anh muốn là người đầu tiên mua đồ của emmm</li>
-              <li>Em luôn phơi phới, bận rộn với công việc yêu thích của mình</li>
-            </ul>
-            <h2>HAPPY NEW YEAR</h2>
-          <div>Ấn vào link này nhé <a href="https://www.youtube.com/watch?v=YUKJdYZxlYI">https://www.youtube.com/watch?v=YUKJdYZxlYI</a></div>
+        <div className="phuong" style={{width: "100px", height: "100px", textAlign: "center",  margin: "0 auto"}}>
+          <h2>Thùy Trang</h2>
+          <img style={{width: "100px", height: "100px"}} src="https://data-main.basecdn.net/201912/sys1/drive/17/15/2d/31/d5/a2/5f/4d12682b12a99c13ad177ef0fd83ca76/0607adc8e0508961ba178856ab125386_218210_SRZHBAXAG3QRC.jpg"></img>
         </div>
       )
     } else if (this.state.name === "Quỳnh Hương" && this.state.click === 1) {
       mHtml = (
-        <div className="huong">
-          <h2>Ấn tượng của anh</h2>
-          <ul className="antuong">
-            <li>Mắt kính to tròn</li>
-            <li>Cười duyên</li>
-          </ul>
-          <h2>Lời chúc của anh</h2>
-          <ul className="antuong">
-            <li>Chúc em sẽ thành công trong những dự định sắp tới của em vào năm 2019 này</li>
-            <li>Lúc nào cũng gặp may mắn trong cuộc sống cũng như công việc</li>
-          </ul>
-          <h2>HAPPY NEW YEAR</h2>
-          <div>Ấn vào link này nhé <a href="https://www.youtube.com/watch?v=YUKJdYZxlYI">https://www.youtube.com/watch?v=YUKJdYZxlYI</a></div>
+        <div className="huong" style={{width: "100px", height: "100px", textAlign: "center",  margin: "0 auto"}}>
+          <h2>Phạm Trung Hiếu</h2>
+          <img style={{width: "100px", height: "100px"}} src="https://data-main.basecdn.net/201912/sys1/drive/17/15/1f/fd/dd/28/0f/eecf80a6182b9fae823ae50e55b602a5/27e4f473109421ff8e50bee8ba84529f_503930_LFMLUJX4XM5EU.jpg"></img>
         </div>
       )
-    } else if (this.state.name === "Trong Manh" && this.state.click === 1) {
+    } else if (this.state.name === "Thúy Vân Trần" && this.state.click === 1) {
       mHtml = (
-        <div className="Trong Manh">
-          <h2>Ấn tượng của anh</h2>
-          <ul className="antuong">
-            <li>To khỏe, vui tính, hòa đồng. Em luôn là tâm điểm khuấy động đám đông, và tạo tiếng cười cho mọi người</li>
-            <li>Tỉ mỉ và cẩn thận trong công việc. </li>
-            <li>Em là người thông minh, mạnh dạn học hỏi, không sợ người khác chê cười, từ một người mù mờ về tiếng anh mà một năm sau em là con người khác hẳn, anh thực sự cảm thấy ấn tượng với Mạnh</li>
-          </ul>
-          <h2>Lời chúc của anh</h2>
-          <ul className="antuong">
-            <li>Chúc em sớm tìm được đam mê của mình và đạt được dự định của mình trong năm 2019</li>
-            <li>Luôn thành công trong mọi lĩnh vực em tham gia</li>
-            <li>Sớm có bạn gái để anh cảm thấy ghen tị :))</li>
-          </ul>
-          <h2>HAPPY NEW YEAR</h2>
-          <div>Ấn vào link này nhé <a href="https://www.youtube.com/watch?v=YUKJdYZxlYI">https://www.youtube.com/watch?v=YUKJdYZxlYI</a></div>
+        <div className="Trong Manh" style={{width: "100px", height: "100px", textAlign: "center",  margin: "0 auto"}}>
+          <h2>Trần Minh</h2>
+          <img style={{width: "100px", height: "100px"}} src="https://data-main.basecdn.net/201912/sys1/drive/17/15/dc/ee/a8/f9/07/d6736137bed400c73626cb3f5512a274/beccfbbebd556037ec3cbfeeb9c46317_196447_RLNQSNJWSUZ2F.jpg"></img>
         </div>
       )
-    } else if (this.state.name === "Thanh Nguyen" && this.state.click === 1) {
+    } else if (this.state.name === "Sơn Đỗ" && this.state.click === 1) {
       mHtml = (
-        <div className="Thanh">
-          <h2>Ấn tượng của em</h2>
-          <ul className="antuong">
-            <li>Anh Thành là người điềm tĩnh, ít nói</li>
-            <li>Anh Thành rất chắc chắn và chỉnh chu trong công việc</li>
-            <li>Anh Thành có điểm gì đó rất giống em</li>
-          </ul>
-          <h2>Lời chúc của em</h2>
-          <ul className="antuong">
-            <li>Anh Thành sẽ đạt được những dự định của mình trong năm 2019 này</li>
-            <li>Anh Thành và Cẩm sẽ mãi hạnh phúc và đáng yêu như vậy. Đôi này hợp không tả được</li>
-            <li>Anh Thành sẽ làm một sự kiện thật lớn nào đó nữa vào năm 2019 này, em sẽ là người đầu tiên mua vé của anh</li>
-          </ul>
-          <h2>HAPPY NEW YEAR</h2>
-          <div>Anh Ấn vào link này nhé <a href="https://www.youtube.com/watch?v=YUKJdYZxlYI">https://www.youtube.com/watch?v=YUKJdYZxlYI</a></div>
+        <div className="Thanh" style={{width: "100px", height: "100px", textAlign: "center",  margin: "0 auto"}}>
+          <h2>Quỳnh Hương</h2>
+          <img style={{width: "100px", height: "100px"}} src="https://data-main.basecdn.net/201912/sys1/drive/17/15/91/c7/2b/00/0e/c04ed11c50bd1a91628e05061dac403d/e39d20157a0bf9ecb9a3dbdf986b1c44_610051_LLJWQM6SKG55F.jpg"></img>
         </div>
       )
-    } else if (this.state.name === "Phuong Thu Nguyen" && this.state.click === 1) {
+    } else if (this.state.name === "Doanh Quảng Đặng" && this.state.click === 1) {
       mHtml = (
-        <div className="Phuong">
-           <h2>Ấn tượng của Anh</h2>
-            <ul className="antuong">
-              <li>Em cao và mặc đồ đen</li>
-              <li>Xinh xắn, tốt bụng</li>
-              <li>Dễ dụ (bị dụ đi chritmas cùng nhóm quest) :))</li>
-            </ul>
-            <h2>Lời chúc của Anh</h2>
-            <ul className="antuong">
-              <li>Phương sẽ đạt được những dự định của mình trong năm 2019 này.</li>
-              <li>Phương sẽ luôn bận rộn và thành công với công việc làm sự kiện của mình.</li>
-              <li>Phương sẽ có "da thịt" hơn vào năm 2019 tới :))</li>
-              <li>Luôn yêu đời và forever young.</li>
-            </ul>
-            <h2>HAPPY NEW YEAR</h2>
-            <div>Em Ấn vào link này nhé <a href="https://www.youtube.com/watch?v=YUKJdYZxlYI">https://www.youtube.com/watch?v=YUKJdYZxlYI</a></div>
+        <div className="Phuong" style={{width: "100px", height: "100px", textAlign: "center",  margin: "0 auto"}}>
+           <h2>Đức Nghĩa</h2>
+           <img style={{width: "100px", height: "100px"}} src="https://data-main.basecdn.net/201912/sys1/drive/17/15/53/61/28/df/ea/e45c0e022eb08873e41b58a8b1cdf041/e39d20157a0bf9ecb9a3dbdf986b1c44_415118_QXWN866WG8GYN.jpg"></img>
         </div>
       )
-    }
+    } else if (this.state.name === "Đông Vũ" && this.state.click === 1) {
+        mHtml = (
+          <div className="Phuong" style={{width: "100px", height: "100px", textAlign: "center",  margin: "0 auto"}}>
+             <h2>Thúy Vân Trần</h2>
+             <img style={{width: "100px", height: "100px"}} src="https://data-main.basecdn.net/201912/sys1/drive/17/15/84/cf/76/fb/e4/d182ceac529441e5213378b9c482625b/7ef6c6c0212a4fbc30e35632137a4b27_638294_FEDNFSZEC4JCL.jpg"></img>
+          </div>
+        )
+      }
+      else if (this.state.name === "Kang wolf" && this.state.click === 1) {
+        mHtml = (
+          <div className="Phuong" style={{width: "100px", height: "100px", textAlign: "center",  margin: "0 auto"}}>
+             <h2>Đông Vũ</h2>
+             <img style={{width: "100px", height: "100px"}} src="https://data-main.basecdn.net/201912/sys1/drive/17/15/00/3d/41/1c/d3/25ef5a0f419f5be3feff8bb2885c814a/7767c61ba11235be6808c46dcc862527_604480_YZV46FN4MGQA3.jpg"></img>
+          </div>
+        )
+      }
+      else if (this.state.name === "Hatter Minh" && this.state.click === 1) {
+        mHtml = (
+          <div className="Phuong" style={{width: "100px", height: "100px", textAlign: "center",  margin: "0 auto"}}>
+             <h2>Kang wolf</h2>
+             <img style={{width: "100px", height: "100px"}} src="https://data-main.basecdn.net/201912/sys1/drive/19/21/2b/a9/63/2d/d0/6283545614b36ca21783d005bae1c13b/c0467b19685fe8dc8b5961924ed330a0_934758_KRSDY9QALBNMR.jpg"></img>
+          </div>
+        )
+      }
 
 
     return (
@@ -207,12 +117,11 @@ class App extends Component {
         <div className="container">
           <form className="form" onSubmit={this.onSubmit}>
             <div className="form-group">
-              <label for="input">Nhập tên facebook của bạn</label>
+              <label className="input">Nhập tên facebook của bạn</label>
               <input type="text" placeholder="Đỗ Sơn" id="input"
                 onChange={this.changeText}
               ></input>
             </div>
-            <button type="submit" className="btn btn-primary">Xem lời chúc</button>
           </form>
           {mHtml}
         </div>
